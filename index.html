@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV Simple - Amina Chouay</title>
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css" rel="stylesheet">
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="cv-wrapper">
+        <div class="header">
+            <div class="profile-img" id="profileImage">
+    <img src="imges/photo.jpeg" alt="Amina Chouay"> 
+</div>
+            </div>
+            <h1>Amina Chouay</h1>
+            <p>Étudiante en Informatique Appliquée</p>
+        </div>
+        <div class="nav-bar">
+            <button class="nav-btn active" onclick="showSection('about')">
+                <i class="fas fa-user me-1"></i> À Propos
+            </button>
+            <button class="nav-btn" onclick="showSection('education')">
+                <i class="fas fa-graduation-cap me-1"></i> Formation
+            </button>
+            <button class="nav-btn" onclick="showSection('skills')">
+                <i class="fas fa-code me-1"></i> Compétences
+            </button>
+            <button class="nav-btn" onclick="showSection('experience')">
+                <i class="fas fa-briefcase me-1"></i> Expérience
+            </button>
+            <button class="nav-btn" onclick="showSection('contact')">
+                <i class="fas fa-envelope me-1"></i> Contact
+            </button>
+        </div>
+        <div class="content">
+            <div id="about" class="section active">
+                <h2><i class="fas fa-user me-2"></i>À Propos de Moi</h2>
+                <p style="line-height: 1.8; color: #555; font-size: 1.1rem;">
+                    Je suis étudiante en deuxième année (S3) du parcours <strong>Informatique Appliquée (IAP)</strong> 
+                    à l'Université Cadi Ayyad de Marrakech. Passionnée par le développement web et l'informatique, 
+                    j'ai acquis des bases solides en HTML, CSS, JavaScript, Bootstrap et structures de données.
+                </p>
+                <p style="line-height: 1.8; color: #555; font-size: 1.1rem;">
+                    Motivée et curieuse, je cherche constamment à améliorer mes compétences à travers des projets 
+                    pratiques et l'apprentissage de nouvelles technologies.
+                </p>
+                
+                <div class="row mt-4">
+                    <div class="col-md-4 text-center mb-3">
+                        <div style="background: #f8f9fa; padding: 20px; border-radius: 10px;">
+                            <i class="fas fa-graduation-cap" style="font-size: 3rem; color: #4e54c8;"></i>
+                            <h5 class="mt-3">Étudiante</h5>
+                            <p class="text-muted">Informatique Appliquée</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4 text-center mb-3">
+                        <div style="background: #f8f9fa; padding: 20px; border-radius: 10px;">
+                            <i class="fas fa-map-marker-alt" style="font-size: 3rem; color: #4e54c8;"></i>
+                            <h5 class="mt-3">Localisation</h5>
+                            <p class="text-muted">Marrakech, Maroc</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4 text-center mb-3">
+                        <div style="background: #f8f9fa; padding: 20px; border-radius: 10px;">
+                            <i class="fas fa-code" style="font-size: 3rem; color: #4e54c8;"></i>
+                            <h5 class="mt-3">Passion</h5>
+                            <p class="text-muted">Développement Web</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="education" class="section">
+                <h2><i class="fas fa-graduation-cap me-2"></i>Formation</h2>
+                
+                <div class="card-simple">
+                    <h4>Licence Informatique Appliquée (IAP)</h4>
+                    <div class="date">
+                        <i class="fas fa-calendar me-2"></i>2024 - En cours
+                    </div>
+                    <p><strong>Université Cadi Ayyad - Marrakech</strong></p>
+                    <p style="color: #555;">
+                        Actuellement en S3, spécialisation en développement web et analyse informatique.
+                        Formation couvrant : structures de données, programmation, UML, développement web.
+                    </p>
+                    <div>
+                        <span class="badge-custom">Programmation</span>
+                        <span class="badge-custom">Web</span>
+                        <span class="badge-custom">UML</span>
+                        <span class="badge-custom">Structures de données</span>
+                    </div>
+                </div>
+
+                <div class="card-simple">
+                    <h4>Baccalauréat Sciences Physiques</h4>
+                    <div class="date">
+                        <i class="fas fa-calendar me-2"></i>2023 - 2024
+                    </div>
+                    <p style="color: #555;">
+                        Formation scientifique solide en mathématiques, physique et chimie.
+                    </p>
+                </div>
+
+                <div class="card-simple">
+                    <h4>Project Soar English Camp</h4>
+                    <div class="date">
+                        <i class="fas fa-certificate me-2"></i>2020 - 2021
+                    </div>
+                    <p style="color: #555;">
+                        Certificat de participation - Programme d'immersion linguistique en anglais.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Section Compétences -->
+            <div id="skills" class="section">
+                <h2><i class="fas fa-code me-2"></i>Compétences Techniques</h2>
+                
+                <h4 style="color: #4e54c8; margin-top: 20px;">Développement Web</h4>
+                
+                <div class="skill-item">
+                    <div class="skill-name">HTML5</div>
+                    <div class="progress">
+                        <div class="progress-bar" data-width="65%" style="width: 0%">75%</div>
+                    </div>
+                </div>
+                
+                <div class="skill-item">
+                    <div class="skill-name">CSS3</div>
+                    <div class="progress">
+                        <div class="progress-bar" data-width="60%" style="width: 0%">65%</div>
+                    </div>
+                </div>
+                
+                <div class="skill-item">
+                    <div class="skill-name">JavaScript</div>
+                    <div class="progress">
+                        <div class="progress-bar" data-width="55%" style="width: 0%">55%</div>
+                    </div>
+                </div>
+                
+                <div class="skill-item">
+                    <div class="skill-name">Bootstrap</div>
+                    <div class="progress">
+                        <div class="progress-bar" data-width="60%" style="width: 0%">50%</div>
+                    </div>
+                </div>
+
+                <h4 style="color: #4e54c8; margin-top: 30px;">Programmation</h4>
+                
+                <div class="skill-item">
+                    <div class="skill-name">Langage C</div>
+                    <div class="progress">
+                        <div class="progress-bar" data-width="35%" style="width: 0%">55%</div>
+                    </div>
+                </div>
+
+                <h4 style="color: #4e54c8; margin-top: 30px;">Langues</h4>
+                
+                <div class="skill-item">
+                    <div class="skill-name">Arabe</div>
+                    <div class="progress">
+                        <div class="progress-bar" data-width="95%" style="width: 0%">95%</div>
+                    </div>
+                </div>
+                
+                <div class="skill-item">
+                    <div class="skill-name">Français</div>
+                    <div class="progress">
+                        <div class="progress-bar" data-width="75%" style="width: 0%">75%</div>
+                    </div>
+                </div>
+                
+                <div class="skill-item">
+                    <div class="skill-name">Anglais</div>
+                    <div class="progress">
+                        <div class="progress-bar" data-width="60%" style="width: 0%">60%</div>
+                    </div>
+                </div>
+            </div>
+            <div id="experience" class="section">
+                <h2><i class="fas fa-briefcase me-2"></i>Expérience & Projets</h2>
+                
+                <div class="card-simple">
+                    <h4>Mini-Projet Web - CV Interactif</h4>
+                    <div class="date">
+                        <i class="fas fa-calendar me-2"></i>2025 - 2026 | Module: Programmation Web 2
+                    </div>
+                    <p style="color: #555;">
+                        Développement d'un CV interactif en ligne avec HTML5, CSS3, Bootstrap et JavaScript.
+                    </p>
+                    <ul style="color: #555;">
+                        <li>Interface responsive et moderne</li>
+                        <li>Navigation interactive avec animations</li>
+                        <li>Publication sur GitHub Pages</li>
+                        <li>Gestion de version avec Git</li>
+                    </ul>
+                    <div>
+                        <span class="badge-custom">HTML</span>
+                        <span class="badge-custom">CSS</span>
+                        <span class="badge-custom">JavaScript</span>
+                        <span class="badge-custom">Bootstrap</span>
+                        <span class="badge-custom">GitHub</span>
+                    </div>
+                </div>
+
+                <div class="card-simple">
+                    <h4>Projets Académiques</h4>
+                    <div class="date">
+                        <i class="fas fa-calendar me-2"></i>2024 - 2025
+                    </div>
+                    <ul style="color: #555;">
+                        <li>Implémentation de structures de données en C</li>
+                        <li>Exercices de programmation et algorithmes</li>
+                        <li>Modélisation UML de systèmes informatiques</li>
+                        <li>Développement de pages web</li>
+                    </ul>
+                </div>
+            </div>
+            <div id="contact" class="section">
+                <h2><i class="fas fa-envelope me-2"></i>Contact</h2>
+                
+                <p style="font-size: 1.1rem; color: #555; margin-bottom: 30px;">
+                    N'hésitez pas à me contacter pour toute opportunité ou collaboration !
+                </p>
+                
+                <div class="contact-info">
+                    <div class="contact-box">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <strong>Email</strong>
+                            <p class="mb-0">aminachouay89@gmail.com</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-box">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <strong>Téléphone</strong>
+                            <p class="mb-0">+212 06 47 24 77 73</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-box">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <strong>Localisation</strong>
+                            <p class="mb-0">Marrakech, Maroc</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-box">
+                        <i class="fab fa-linkedin"></i>
+                        <div>
+                            <strong>LinkedIn</strong>
+                            <p class="mb-0">linkedin.com/in/amina-chouay</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-box">
+                        <i class="fab fa-github"></i>
+                        <div>
+                            <strong>GitHub</strong>
+                            <p class="mb-0">github.com/aminachouay</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-box">
+                        <i class="fas fa-graduation-cap"></i>
+                        <div>
+                            <strong>Université</strong>
+                            <p class="mb-0">Cadi Ayyad - Marrakech</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="text-center mt-4">
+                    <h5 style="color: #4e54c8;">Centres d'Intérêt</h5>
+                    <div class="mt-3">
+                        <span class="badge-custom"><i class="fas fa-music me-2"></i>Musique</span>
+                        <span class="badge-custom"><i class="fas fa-plane me-2"></i>Voyages</span>
+                        <span class="badge-custom"><i class="fas fa-futbol me-2"></i>Football</span>
+                        <span class="badge-custom"><i class="fas fa-book me-2"></i>Lecture</span>
+                        <span class="badge-custom"><i class="fas fa-camera me-2"></i>Photographie</span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="footer">
+            <p class="text-muted mb-3">
+                <i class="fas fa-code me-2"></i>Développé avec HTML, CSS, Bootstrap & JavaScript
+            </p>
+            <button class="btn-download" onclick="window.print()">
+                <i class="fas fa-download me-2"></i>Télécharger le CV
+            </button>
+            <p class="text-muted mt-3 mb-0">© 2025 Amina Chouay</p>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- JavaScript personnalisé -->
+    <script src="script.js"></script>
+</body>
+</html>
