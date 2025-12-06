@@ -1,6 +1,4 @@
-/* ========================================
-   RESET ET BASE
-======================================== */
+
 * {
     margin: 0;
     padding: 0;
@@ -13,10 +11,6 @@ body {
     padding: 20px;
     min-height: 100vh;
 }
-
-/* ========================================
-   CONTAINER PRINCIPAL
-======================================== */
 .cv-wrapper {
     max-width: 900px;
     margin: 0 auto;
@@ -26,10 +20,6 @@ body {
     overflow: hidden;
     border: 2px solid #00bcd4;
 }
-
-/* ========================================
-   EN-TÊTE
-======================================== */
 .header {
     background: linear-gradient(135deg, #1a1a2e 0%, #0f3460 50%, #00bcd4 100%);
     color: white;
@@ -38,8 +28,6 @@ body {
     position: relative;
     overflow: hidden;
 }
-
-/* Effet de fond animé */
 .header::before {
     content: '';
     position: absolute;
@@ -88,8 +76,6 @@ body {
                 inset 0 0 30px rgba(0, 188, 212, 0.3);
     border-color: #4dd0e1;
 }
-
-/* Effet de lueur pulsante */
 .profile-img::before {
     content: '';
     position: absolute;
@@ -113,8 +99,6 @@ body {
         transform: scale(1.1);
     }
 }
-
-/* Style pour l'image de profil */
 .profile-img img {
     width: 100%;
     height: 100%;
@@ -130,8 +114,6 @@ body {
     filter: brightness(1.2) contrast(1.2);
     transform: scale(1.05);
 }
-
-/* Si pas d'image, afficher l'icône */
 .profile-img i {
     font-size: 60px;
     color: white;
@@ -139,13 +121,9 @@ body {
     z-index: 2;
     text-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
 }
-
-/* IMPORTANT: Cacher l'icône si une image existe */
 .profile-img img ~ i {
     display: none;
 }
-
-/* Ou utilisez cette règle pour cacher l'icône quand il y a une image */
 .profile-img:has(img) i {
     display: none !important;
 }
@@ -168,10 +146,6 @@ body {
     color: #4dd0e1;
     text-shadow: 0 0 10px rgba(0, 188, 212, 0.5);
 }
-
-/* ========================================
-   NAVIGATION
-======================================== */
 .nav-bar {
     background: linear-gradient(to right, #1a1a2e, #16213e);
     padding: 20px 15px;
@@ -231,10 +205,6 @@ body {
 .nav-bar button i {
     margin-right: 8px;
 }
-
-/* ========================================
-   CONTENU
-======================================== */
 .content {
     padding: 40px;
     min-height: 400px;
@@ -288,10 +258,6 @@ body {
     color: #00bcd4;
     text-shadow: 0 0 10px rgba(0, 188, 212, 0.3);
 }
-
-/* ========================================
-   CARTES
-======================================== */
 .card-simple {
     background: linear-gradient(135deg, #f8f9fa 0%, #e3f2fd 100%);
     padding: 25px;
@@ -362,10 +328,6 @@ body {
 .card-simple ul li {
     margin-bottom: 10px;
 }
-
-/* ========================================
-   BARRES DE COMPÉTENCES
-======================================== */
 .skill-item {
     margin-bottom: 25px;
 }
@@ -399,8 +361,6 @@ body {
     position: relative;
     overflow: hidden;
 }
-
-/* Effet de brillance animée */
 .progress-bar::after {
     content: '';
     position: absolute;
@@ -497,10 +457,6 @@ body {
 .badge-custom i {
     margin-right: 6px;
 }
-
-/* ========================================
-   FOOTER
-======================================== */
 .footer {
     background: linear-gradient(to right, #1a1a2e, #16213e);
     padding: 25px;
@@ -535,10 +491,6 @@ body {
 .btn-download i {
     margin-right: 10px;
 }
-
-/* ========================================
-   CARTES INFOS (SECTION À PROPOS)
-======================================== */
 .col-md-4 > div {
     transition: all 0.3s ease;
     border: 2px solid transparent;
@@ -556,10 +508,6 @@ body {
     color: #00bcd4 !important;
     text-shadow: 0 0 10px rgba(0, 188, 212, 0.3);
 }
-
-/* ========================================
-   RESPONSIVE - TABLETTES
-======================================== */
 @media (max-width: 992px) {
     .content {
         padding: 30px;
@@ -569,10 +517,6 @@ body {
         font-size: 1.7rem;
     }
 }
-
-/* ========================================
-   RESPONSIVE - MOBILES
-======================================== */
 @media (max-width: 768px) {
     body {
         padding: 10px;
@@ -626,10 +570,6 @@ body {
         padding: 18px;
     }
 }
-
-/* ========================================
-   RESPONSIVE - PETITS MOBILES
-======================================== */
 @media (max-width: 576px) {
     .header h1 {
         font-size: 2rem;
@@ -650,10 +590,6 @@ body {
         font-size: 0.95rem;
     }
 }
-
-/* ========================================
-   MODE IMPRESSION
-======================================== */
 @media print {
     body {
         background: white;
@@ -688,10 +624,6 @@ body {
         background: linear-gradient(135deg, #1a1a2e 0%, #00bcd4 100%) !important;
     }
 }
-
-/* ========================================
-   SCROLLBAR PERSONNALISÉE
-======================================== */
 ::-webkit-scrollbar {
     width: 12px;
 }
@@ -709,10 +641,6 @@ body {
 ::-webkit-scrollbar-thumb:hover {
     background: linear-gradient(to bottom, #4dd0e1, #00bcd4);
 }
-
-/* ========================================
-   EFFETS SUPPLÉMENTAIRES
-======================================== */
 .section h4 {
     color: #1a1a2e;
 }
@@ -724,10 +652,6 @@ h5 {
 strong {
     color: #00bcd4;
 }
-
-/* ========================================
-   UTILITAIRES
-======================================== */
 .text-center {
     text-align: center;
 }
@@ -755,7 +679,3 @@ strong {
 .me-2 {
     margin-right: 0.5rem;
 }
-
-/* ========================================
-   FIN DU FICHIER CSS NOIR ET BLEU CIEL
-=================================
